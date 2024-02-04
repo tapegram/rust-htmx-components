@@ -1,0 +1,19 @@
+[package]
+name = "web-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { workspace = true }
+axum-flash = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+tower-http = { workspace = true, features = ["fs"] }
+rscx = { workspace = true }
+once_cell = { workspace = true }
+web-macros = { path = "../web-macros" }
+typed-builder = { workspace = true }
+
+[build-dependencies]
+sha256 = { workspace = true }
