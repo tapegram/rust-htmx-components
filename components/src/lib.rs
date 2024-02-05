@@ -1,4 +1,4 @@
-extern crate self as web_client; // Allows web_client crate to import from itself when expanding macros.
+extern crate self as components; // Allows components crate to import from itself when expanding macros.
 #[doc(inline)]
 pub use crate::server::html_layout::HtmlLayout;
 pub mod server;

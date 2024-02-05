@@ -104,7 +104,7 @@ impl ToTokens for HtmlElementStruct {
                 )*
 
                 #[builder(default)]
-                attrs: ::web_client::server::attrs::Attrs,
+                attrs: ::components::server::attrs::Attrs,
             }
         };
         let fields: FieldsNamed = syn::parse_quote! { #fields };
@@ -128,7 +128,7 @@ impl ToTokens for HtmlElementStruct {
                     let mut map = std::collections::HashMap::new();
 
                     #(
-                        map.insert(#attr_keys, web_client::concat_attribute(&self.#attr_idents, self.attrs.get(#attr_keys)));
+                        map.insert(#attr_keys, components::concat_attribute(&self.#attr_idents, self.attrs.get(#attr_keys)));
                     )*
 
                     // Check for special case html attributes that are not part of HtmlElementProps
@@ -146,9 +146,9 @@ impl ToTokens for HtmlElementStruct {
                 }
             }
 
-            impl From<#name> for ::web_client::server::attrs::Attrs {
+            impl From<#name> for ::components::server::attrs::Attrs {
                 fn from(html_props: #name) -> Self {
-                    ::web_client::server::attrs::Attrs::from(html_props.html_attrs_to_hashmap())
+                    ::components::server::attrs::Attrs::from(html_props.html_attrs_to_hashmap())
                 }
             }
         });
@@ -217,13 +217,13 @@ pub fn spread_attrs(input: TokenStream) -> TokenStream {
         {
             let mut map = std::collections::HashMap::new();
             #(
-                map.insert(#attr_keys, web_client::concat_attribute(&#props.#attr_idents, #props.attrs.get(#attr_keys)));
+                map.insert(#attr_keys, components::concat_attribute(&#props.#attr_idents, #props.attrs.get(#attr_keys)));
             )*
 
             let attrs = vec![#(#attr_keys),*];
             map.extend(#props.attrs.to_hashmap_excluding(attrs));
 
-            ::web_client::server::attrs::Attrs::from(map)
+            ::components::server::attrs::Attrs::from(map)
         }
     };
 

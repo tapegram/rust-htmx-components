@@ -26,6 +26,12 @@ pub struct HtmlLayoutProps {
     children: String,
 }
 
+/**
+* Note, for now, im using a CDN for tailwindcss. This is not ideal for productionn -- but
+* theres a bunch to figure out how to get this working well as a library, what with all
+* the tailwind building and themes and junk.
+*
+*/
 #[component]
 pub fn HtmlLayout(props: HtmlLayoutProps) -> String {
     html! {
@@ -35,7 +41,7 @@ pub fn HtmlLayout(props: HtmlLayoutProps) -> String {
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>{props.head_title}</title>
-                <link href={format!("/client/common.css?ts={}", *TS)} rel="stylesheet" />
+                <script src="https://cdn.tailwindcss.com"></script>
                 <script>{
                     "window.YcControls = {
                         attachOnReadyQueue: [],
