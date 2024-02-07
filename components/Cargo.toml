@@ -1,7 +1,11 @@
 [package]
 name = "components"
-version = "0.1.0"
+version = { workspace = true }
 edition = "2021"
+authors = ["Tavish Pegram"]
+license = "MIT"
+description = "HTMX enabled components for Axum"
+readme = "../README.md"
 
 [dependencies]
 axum = { workspace = true }
