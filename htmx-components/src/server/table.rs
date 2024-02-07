@@ -2,7 +2,7 @@ use rscx::{component, html, props, CollectFragment};
 
 use super::html_element::HtmlElement;
 
-use web_macros::*;
+use rscx_web_macros::*;
 
 pub enum TableHeading {
     Title(String),

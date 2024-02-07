@@ -1,4 +1,4 @@
-use components::server::page_header::PageHeaderToolbar;
+use htmx_components::server::page_header::PageHeaderToolbar;
 use rscx::{component, html, props};
 
 pub enum PageHeader {

@@ -6,7 +6,7 @@ use axum::{
 };
 use rscx::{component, html, props};
 
-use components::server::form::{Button, FileInput, Label};
+use htmx_components::server::form::{Button, FileInput, Label};
 
 pub fn file_input_routes() -> Router {
     Router::new().route("/", post(upload_file))

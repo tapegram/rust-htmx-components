@@ -4,7 +4,7 @@ use axum::{
     routing::{delete, get},
     Router,
 };
-use components::server::{
+use htmx_components::server::{
     button::PrimaryButton,
     flyout::Flyout,
     modal::Modal,

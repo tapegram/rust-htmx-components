@@ -1,7 +1,7 @@
 use super::appshell::AppShell;
 pub use super::appshell::PageHeader;
-use components::server::{modal::ModalLiveRegion, notification::NotificationLiveRegion};
-use components::HtmlLayout;
+use htmx_components::server::{modal::ModalLiveRegion, notification::NotificationLiveRegion};
+use htmx_components::HtmlLayout;
 use rscx::{component, html, props};
 
 #[props]

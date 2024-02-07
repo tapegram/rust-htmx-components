@@ -207,23 +207,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "components"
-version = "0.3.0"
-dependencies = [
- "axum",
- "axum-flash",
- "once_cell",
- "rscx",
- "serde",
- "serde_json",
- "sha256",
- "tokio",
- "tower-http",
- "typed-builder 0.18.1",
- "web-macros",
-]
-
-[[package]]
 name = "convert_case"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -492,6 +475,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6d1ad449764d627e22bfd7cd5e8868264fc9236e07c752972b4080cd351cb476"
 dependencies = [
  "utf8-width",
+]
+
+[[package]]
+name = "htmx-components"
+version = "0.3.0"
+dependencies = [
+ "axum",
+ "axum-flash",
+ "once_cell",
+ "rscx",
+ "rscx-web-macros",
+ "serde",
+ "serde_json",
+ "sha256",
+ "tokio",
+ "tower-http",
+ "typed-builder 0.18.1",
 ]
 
 [[package]]
@@ -785,8 +785,9 @@ dependencies = [
  "axum-extra",
  "axum-flash",
  "axum-macros",
- "components",
+ "htmx-components",
  "rscx",
+ "rscx-web-macros",
  "serde",
  "serde_json",
  "sha256",
@@ -794,7 +795,6 @@ dependencies = [
  "tokio",
  "tower-http",
  "typed-builder 0.18.1",
- "web-macros",
 ]
 
 [[package]]
@@ -928,6 +928,15 @@ dependencies = [
  "proc-macro2-diagnostics",
  "quote",
  "rstml",
+ "syn",
+]
+
+[[package]]
+name = "rscx-web-macros"
+version = "0.3.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
  "syn",
 ]
 
@@ -1386,15 +1395,6 @@ name = "wasi"
 version = "0.11.0+wasi-snapshot-preview1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
-
-[[package]]
-name = "web-macros"
-version = "0.3.0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
 
 [[package]]
 name = "windows-sys"

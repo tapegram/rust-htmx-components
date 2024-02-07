@@ -1,7 +1,7 @@
 use rscx::{component, html, props, CollectFragment};
 use typed_builder::TypedBuilder;
 
-use web_macros::*;
+use rscx_web_macros::*;
 
 use super::attrs::Attrs;
 use super::html_element::HtmlElement;

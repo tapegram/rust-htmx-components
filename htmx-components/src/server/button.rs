@@ -1,6 +1,6 @@
 use super::html_element::HtmlElement;
 use rscx::{component, html, props};
-use web_macros::*;
+use rscx_web_macros::*;
 
 #[derive(Clone)]
 pub enum ButtonSize {

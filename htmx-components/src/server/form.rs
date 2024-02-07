@@ -1,11 +1,11 @@
 use rscx::{component, html, props};
 
-use web_macros::*;
+use rscx_web_macros::*;
 
 use super::{attrs::Attrs, html_element::HtmlElement};
 use crate::server::yc_control::YcControl;
 
-#[html_element]
+#[rscx_web_macros::html_element]
 pub struct TextInputProps {
     #[builder(setter(into), default="text".into())]
     input_type: String,

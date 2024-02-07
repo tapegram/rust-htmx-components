@@ -1,6 +1,6 @@
 use rscx::{component, html, props};
 
-use components::server::form::{GridCell, GridLayout, Label, Select, SelectOption, TextInput};
+use htmx_components::server::form::{GridCell, GridLayout, Label, Select, SelectOption, TextInput};
 
 // ### Components ###
 

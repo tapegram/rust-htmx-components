@@ -1,5 +1,5 @@
 [package]
-name = "web-macros"
+name = "rscx-web-macros"
 version = { workspace = true }
 edition = "2021"
 authors = ["Tavish Pegram"]

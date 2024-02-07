@@ -1,7 +1,7 @@
 use super::opt_attrs::opt_attrs;
 use rscx::{component, props};
 use std::collections::HashMap;
-use web_macros::*;
+use rscx_web_macros::*;
 
 #[html_element]
 pub struct HtmlElementProps {

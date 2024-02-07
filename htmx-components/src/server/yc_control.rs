@@ -1,6 +1,6 @@
 use super::html_element::HtmlElement;
 use rscx::{component, html, props};
-use web_macros::{html_element, spread_attrs};
+use rscx_web_macros::{html_element, spread_attrs};
 
 #[html_element]
 pub struct YcControlProps {

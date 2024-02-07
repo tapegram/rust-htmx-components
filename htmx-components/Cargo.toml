@@ -1,5 +1,5 @@
 [package]
-name = "components"
+name = "htmx-components"
 version = { workspace = true }
 edition = "2021"
 authors = ["Tavish Pegram"]
@@ -19,7 +19,7 @@ tokio = { workspace = true, features = ["full"] }
 tower-http = { workspace = true, features = ["fs"] }
 rscx = { workspace = true }
 once_cell = { workspace = true }
-web-macros = { workspace = true }
+rscx-web-macros = { workspace = true }
 typed-builder = { workspace = true }
 
 [build-dependencies]

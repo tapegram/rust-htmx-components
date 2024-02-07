@@ -6,7 +6,7 @@ use axum::{
 use rscx::{component, html, props};
 use std::time::{SystemTime, UNIX_EPOCH};
 
-use components::server::{
+use htmx_components::server::{
     attrs::Attrs,
     button::{PrimaryButton, SecondaryButton},
     notification::{

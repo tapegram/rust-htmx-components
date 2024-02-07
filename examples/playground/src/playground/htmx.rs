@@ -1,7 +1,7 @@
 use axum::{response::Html, routing::get, Router};
 use rscx::{component, html, props};
 
-use components::server::button::SecondaryButton;
+use htmx_components::server::button::SecondaryButton;
 
 pub fn htmx_routes() -> Router {
     Router::new().route("/", get(htmx_test))

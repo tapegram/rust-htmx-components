@@ -20,5 +20,5 @@ syn = { version = "2.0.38" }
 tokio = { version = "1.32.0" }
 tower-http = { version = "0.5.0" }
 typed-builder = { version = "0.18.0" }
-components = { path = "../../components" }
-web-macros = { path = "../../web-macros" }
+htmx-components = { path = "../../htmx-components" }
+rscx-web-macros = { path = "../../rscx-web-macros" }

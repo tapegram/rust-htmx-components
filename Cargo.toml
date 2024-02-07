@@ -1,14 +1,14 @@
 [workspace]
 resolver = "2"
 
-members = ["components", "web-macros", "examples/*"]
+members = ["htmx-components", "rscx-web-macros", "examples/*"]
 
 [workspace.package]
 version = "0.3.0"
 
 [workspace.dependencies]
-components = { path = "./components", version = "0.3.0" }
-web-macros = { path = "./web-macros", version = "0.3.0" }
+htmx-components = { path = "./htmx-components", version = "0.3.0" }
+rscx-web-macros = { path = "./rscx-web-macros", version = "0.3.0" }
 axum = { version = "0.7.1" }
 axum-extra = { version = "0.9.0", features = ["form", "cookie"] }
 axum-flash = { version = "0.8.0" }

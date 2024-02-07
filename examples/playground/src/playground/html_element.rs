@@ -1,5 +1,5 @@
 #![allow(unused_braces)]
-use components::server::html_element::HtmlElement;
+use htmx_components::server::html_element::HtmlElement;
 use rscx::{component, html, props};
 
 #[component]
@@ -58,7 +58,7 @@ fn MessageButton(props: MessageButtonProps) -> String {
 }
 
 // This macro adds all standard HTML attributes for your component!
-#[web_macros::html_element]
+#[rscx_web_macros::html_element]
 pub struct SimpleElementProps {
     #[builder(default)]
     children: String,
