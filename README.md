@@ -4,7 +4,7 @@ This is a POC library which provides some JS enriched HTMX components so you can
 
 Give it a try and let us know your experience!
 
-![Playground Recording](docs/playground-recording.mp4)
+https://github.com/tapegram/rust-htmx-components/assets/1281274/43422f70-11a5-4b37-8854-10372db98046
 
 ## Summary
 
