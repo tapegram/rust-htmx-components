@@ -4,7 +4,7 @@ This is a POC library which provides some JS enriched HTMX components so you can
 
 Give it a try and let us know your experience!
 
-![Playground Recording](docs/playground-recording.mov)
+![Playground Recording](docs/playground-recording.mp4)
 
 ## Summary
 
