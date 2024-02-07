@@ -208,7 +208,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "components"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "axum",
  "axum-flash",
@@ -1389,7 +1389,7 @@ checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
 
 [[package]]
 name = "web-macros"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "proc-macro2",
  "quote",
