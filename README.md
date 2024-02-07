@@ -4,6 +4,8 @@ This is a POC library which provides some JS enriched HTMX components so you can
 
 Give it a try and let us know your experience!
 
+![Playground Recording](docs/playground-recording.mov)
+
 ## Summary
 
 This lib provides a collection of [RSCX](https://github.com/pitasi/rscx)-based rust components with behavior provided by [htmx-glue](https://github.com/tapegram/htmx-glue) so you can do [HTMX](https://htmx.org/) in style almost purely in Rust!
