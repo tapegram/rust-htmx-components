@@ -68,20 +68,6 @@ pub fn ModalPlayground() -> String {
                         </PrimaryButton>
                     </div>
                 </section>
-                <section>
-                    <p><em>Special client-side only modals</em></p>
-                    <div class="flex gap-2">
-                        <PrimaryButton
-                            onclick="YcControls.confirmDelete({
-                                title: 'Delete Foo',
-                                message: 'Are you sure you want to delete Foo?',
-                                deleteHref: '/playground/modals/foo',
-                            })" 
-                        >
-                            Confirm Delete of Foo
-                        </PrimaryButton>
-                    </div>
-                </section>
             </div>
             <div id="modals-root"></div>
         </section>

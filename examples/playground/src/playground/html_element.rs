@@ -27,6 +27,7 @@ fn FooButton() -> String {
             tag="button"
             class="bg-slate-200 ml-4 p-3 rounded-full"
             id="btn-foo"
+            onclick={format!("alert('{}')", "Foo!")}
         >
             A button rendered w/ HTMLElement. Click for more foo!
         </HtmlElement>

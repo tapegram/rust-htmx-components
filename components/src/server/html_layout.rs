@@ -59,7 +59,7 @@ pub fn HtmlLayout(props: HtmlLayoutProps) -> String {
             </head>
             <body>
                 {props.children}
-                <script src={format!("/client/common.js?ts={}", *TS)}></script>
+                <script src="https://unpkg.com/htmx-glue/out/common.js"></script>
             </body>
         </html>
     }

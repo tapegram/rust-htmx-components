@@ -1,4 +1,4 @@
-use axum::{response::Html, routing::get, Router};
+use axum::{http::StatusCode, middleware, response::Html, routing::get, Router};
 use rscx::{component, html, props};
 
 use file_input::{file_input_routes, FileInputPlayground};
@@ -10,6 +10,8 @@ use notifications::{notification_routes, NotificationsPlayground};
 use page::{page_routes, PagePlayground};
 
 use crate::playground::page_layout::PageLayout;
+
+use self::{context::provide_context_layer, state::WebHtmxState};
 
 pub mod appshell;
 pub mod context;
@@ -23,14 +25,16 @@ pub mod page;
 pub mod page_layout;
 pub mod state;
 
-pub fn routes() -> Router {
+pub fn routes(state: WebHtmxState) -> Router {
     Router::new()
+        .with_state(state.clone())
         .route("/", get(get_playground))
         .nest("/page", page_routes())
         .nest("/htmx", htmx_routes())
         .nest("/modals", modal_routes())
         .nest("/notifications", notification_routes())
         .nest("/file-input", file_input_routes())
+        .layer(middleware::from_fn_with_state(state, provide_context_layer))
 }
 
 // ### Route Handlers ###
