@@ -6,6 +6,9 @@ authors = ["Tavish Pegram"]
 license = "MIT"
 description = "HTMX enabled components for Axum"
 readme = "../README.md"
+documentation = "https://docs.rs/components"
+homepage = "github.com/tavishpegram/rust-htmx-components"
+repository = "github.com/tavishpegram/rust-htmx-components"
 
 [dependencies]
 axum = { workspace = true }
