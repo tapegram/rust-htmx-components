@@ -171,7 +171,6 @@ enum Transformer {
 
 type TransformerFn = (Ident, ParenthesizedGenericArguments);
 
-#[derive(Debug)]
 struct AttrsSpread {
     props: Ident,
     transforms: Vec<TransformerFn>,
