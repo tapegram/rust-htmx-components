@@ -2,6 +2,13 @@
 name = "web-macros"
 version = { workspace = true }
 edition = "2021"
+authors = ["Tavish Pegram"]
+license = "MIT"
+description = "A set of macros enhancing RSCX components in Rust"
+readme = "../README.md"
+documentation = "https://docs.rs/components"
+homepage = "github.com/tavishpegram/rust-htmx-components"
+repository = "github.com/tavishpegram/rust-htmx-components"
 
 [lib]
 proc-macro = true
